@@ -1,0 +1,6 @@
+﻿<div *ngIf="MessageModel"
+     class="alert"
+     [class.alert-success]="MessageModel.MessageType == 1"
+     [class.alert-danger]="MessageModel.MessageType == 2">
+    {{MessageModel.Message}}
+</div>
